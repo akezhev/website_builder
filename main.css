@@ -1,6 +1,27 @@
 #app {
   position: relative;
-  box-sizing: border-box;
+  
+}
+/* Добавляем базовые стили для предотвращения скролла */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Стили для сетки */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /* Компенсируем padding колонок */
+  width: 100%;
+}
+
+.col-sm {
+  flex: 1 0 0%; /* Гибкие колонки */
+  padding: 0 15px; /* Отступы внутри колонок */
+  box-sizing: border-box; /* Учитываем padding в ширине */
+  min-width: 200px; /* Минимальная ширина колонки */
 }
 
 .content {
@@ -22,7 +43,12 @@
   overflow-y: auto;
 }
 
+h1 {
+  word-wrap: break-word; /* Перенос длинных слов */
+}
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
