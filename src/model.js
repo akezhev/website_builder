@@ -3,7 +3,7 @@ import image from './assets/image.png'
 export const model = [
   {type: 'title', value: 'Website builder from JavaScript', options: {
     tag: 'h2',
-    styles: `background: linear-gradient(#751FB2, #3B6AB2); color: #fff`,
+    styles: `background: linear-gradient(#751FB2, #3B6AB2); color: #fff; text-align: center; padding: 1.5rem;`,
   }},
   {type: 'text', value: 'here we go some text'},
   {type: 'columns', value: [
