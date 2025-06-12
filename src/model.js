@@ -1,7 +1,10 @@
 import image from './assets/image.png'
 
 export const model = [
-  {type: 'title', value: 'Website builder from JS'},
+  {type: 'title', value: 'Website builder from JavaScript', options: {
+    tag: 'h2',
+    styles: `background: linear-gradient(#751FB2, #3B6AB2); color: #fff`,
+  }},
   {type: 'text', value: 'here we go some text'},
   {type: 'columns', value: [
     '11111111111111',
