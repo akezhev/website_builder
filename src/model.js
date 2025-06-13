@@ -18,7 +18,12 @@ export const model = [
       padding: '2rem 0',
       display: 'flex',
       'justify-content': 'center'
-    }
+    },
+    imageStyles: {
+      width: '1000px',
+      height: 'auto'
+    },
+    alt: 'this is picture'
   }},
 
   {type: 'columns', value: [
@@ -28,7 +33,8 @@ export const model = [
   ], options: {
     styles: {
       background: 'linear-gradient( #3B6AB2, #4994B2)',
-      padding: '1rem',
+      padding: '2rem',
+      color: 'white',
       'font-weight': 'bold'
     }
   }},
