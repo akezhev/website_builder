@@ -13,14 +13,6 @@ export const model = [
     }
   }},
 
-  {type: 'text', value: text, options: {
-    styles: {
-      background: 'linear-gradient(#751FB2, #3B6AB2)',
-      padding: '1rem',
-      'font-weight': 'bold'
-    }
-  }},
-
   {type: 'image', value: image, options: {
     styles: {
       padding: '2rem 0',
@@ -35,7 +27,15 @@ export const model = [
     'JavaScript - это просто, и интересно. Научись создавать любые UI своими руками',
   ], options: {
     styles: {
-      background: 'linear-gradient(#751FB2, #3B6AB2)',
+      background: 'linear-gradient( #3B6AB2, #4994B2)',
+      padding: '1rem',
+      'font-weight': 'bold'
+    }
+  }},
+
+  {type: 'text', value: text, options: {
+    styles: {
+      background: 'linear-gradient(#4994B2, #751FB2)',
       padding: '1rem',
       'font-weight': 'bold'
     }

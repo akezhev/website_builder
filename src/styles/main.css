@@ -1,12 +1,16 @@
 #app {
   position: relative;
-  
 }
 /* Добавляем базовые стили для предотвращения скролла */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
 }
 
 /* Стили для сетки */
@@ -52,3 +56,4 @@ img {
   height: auto;
   display: block;
 }
+
