@@ -1,9 +1,10 @@
 import image from './assets/image.png';
+import {TitleBlock, ImageBlock, ColumnsBlock, TextBlock} from './classes/blocks';
 
 const text = `Если нужен сайт на JavaScript, оставь заявку: <a href="https://rutube.com" target="_blank">Tim Akezh</a>`
 
 export const model = [
-  {type: 'title', value: 'Website builder from JavaScript', options: {
+  new TitleBlock('Website builder from JavaScript', {
     tag: 'h2',
     styles: {
       background: 'linear-gradient(#751FB2, #3B6AB2)',
@@ -11,9 +12,8 @@ export const model = [
       padding: '1.5rem',
       'text-align': 'center',
     }
-  }},
-
-  {type: 'image', value: image, options: {
+  }),
+  new ImageBlock(image, {
     styles: {
       padding: '2rem 0',
       display: 'flex',
@@ -24,27 +24,24 @@ export const model = [
       height: 'auto'
     },
     alt: 'this is picture'
-  }},
-
-  {type: 'columns', value: [
+  }),
+  new ColumnsBlock([
     'Приложение на чистом JavaScript, без использования библиотек',
     'Узнаешь как работают принцыпы SOLID и ООП в JavaScript',
     'JavaScript - это просто, и интересно. Научись создавать любые UI своими руками',
-  ], options: {
+  ], {
     styles: {
       background: 'linear-gradient( #3B6AB2, #4994B2)',
       padding: '2rem',
       color: 'white',
       'font-weight': 'bold'
     }
-  }},
-
-  {type: 'text', value: text, options: {
+  }),
+  new TextBlock(text, {
     styles: {
       background: 'linear-gradient(#4994B2, #751FB2)',
       padding: '1rem',
       'font-weight': 'bold'
     }
-  }},
-
+  }),
 ];
