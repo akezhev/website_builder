@@ -13,6 +13,7 @@ export function col(content) {
 
 // Деструктуризацию в аргументах функции map для лучшей читаемости
 export function css(styles = {}) {
+  if (typeof styles === 'string') return styles;
   if (typeof styles !== 'object' || styles === null) {
     return '';
   }
