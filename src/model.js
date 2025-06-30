@@ -1,10 +1,10 @@
-import image from './assets/image.png';
+import image from './assets/image-2.jpg';
 import {TitleBlock, ImageBlock, ColumnsBlock, TextBlock} from './classes/blocks';
 
 const text = `Если нужен сайт на JavaScript, оставь заявку: <a href="https://rutube.com" target="_blank">Tim Akezh</a>`
 
 export const model = [
-  new TitleBlock('Website builder from JavaScript', {
+  new TitleBlock('Конструктор сайтов на чистом JavaScript', {
     tag: 'h2',
     styles: {
       background: 'linear-gradient(#751FB2, #3B6AB2)',
